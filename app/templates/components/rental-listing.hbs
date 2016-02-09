@@ -8,8 +8,8 @@
 
 {{#if isImageShowing}}
   <p><img src={{rental.image}} alt={{rental.type}} width="500"></p>
-  <button {{action "imageHide"}}>Hide image</button>
+  <button class='hide'{{action "imageHide"}}>Hide image</button>
 {{else}}
-  <button {{action "imageShow"}}>Show image</button>
+  <button class='show'{{action "imageShow"}}>Show image</button>
 {{/if}}
 
