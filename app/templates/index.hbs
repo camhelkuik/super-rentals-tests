@@ -10,6 +10,7 @@ autoComplete=(action 'autoComplete') search=(action 'search')}}
   {{rental-listing rental=rental-unit}}
 {{/each}}
 
-{{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
-
+<ul>
+  <li>{{#link-to 'about' class="about-link"}}About{{/link-to}}</li>
+  <li>{{#link-to 'contact' class="contact-link"}}Click here to contact us.{{/link-to}}</li>
+</ul>
