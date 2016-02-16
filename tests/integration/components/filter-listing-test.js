@@ -10,17 +10,12 @@ test('it renders', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });" + EOL + EOL +
 
+
   this.render(hbs`{{filter-listing}}`);
   
 
   assert.equal(this.$().text().trim(), 'City: Search');
 
-  // Template block usage:" + EOL +
-  // this.render(hbs`
- //    {{#filter-listing}}
- //      template block text
- //    {{/filter-listing}}
- //  `);
- //
- //  assert.equal(this.$().text().trim(), 'template block text');
-});
+ });
+ 
+
