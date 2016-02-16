@@ -1,10 +1,10 @@
 {{yield}}
 
-<h2>{{rental.title}}</h2>
-<p>Owner: {{rental.owner}}</p>
-<p>Type: {{rental-property-type rental.type}} - {{rental.type}}</p>
-<p>Location: {{rental.city}}</p>
-<p>Number of bedrooms: {{rental.bedrooms}}</p>
+<h2 class='title'>{{rental.title}}</h2>
+<p class='owner'>Owner: {{rental.owner}}</p>
+<p class='type'>Type: {{rental-property-type rental.type}} - {{rental.type}}</p>
+<p class='location'>Location: {{rental.city}}</p>
+<p class='bedrooms'>Number of bedrooms: {{rental.bedrooms}}</p>
 
 {{#if isImageShowing}}
   <p><img src={{rental.image}} alt={{rental.type}} width="500"></p>
